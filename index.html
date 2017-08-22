@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>THE PERCEPTICON</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          The Percepticon
+          <small><br><em>"Quality Journalism is the right of all sentient beings"</em></small>
+        </h1>
+
+        <h2>Try it out!</h2>
+        <p>Copy and paste an article title you've found online and THE PERCEPTICON
+          will tell you if it's likely to be a good article or not.</p>
+        </div>
+
+        <form class="">
+          <textarea id="headline-input" name="title" rows="8" cols="80" placeholder="20 pictures of Kanye West being lit AF"></textarea>
+          <input  id="headline-submit" type="submit" name="submit-button" class="btn btn-primary btn-block" value="Rate">
+        </form>
+
+        <!-- TODO: Add visual feedback for API requests e.g. a text element that changes between good and bad -->
+
+        <h2>How to Use</h2>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Request</h3>
+          </div>
+
+          <div class="row panel-body">
+              <div class="col-md-2">
+                GET
+              </div>
+
+              <div class="col-md-10 text-left">
+                <code>http://percepticon.herokuapp.com/scores/new?title="5 ways to prove you're a 90's kid"</code>
+              </div>
+            </div>
+        </div>
+
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3>Response</h3>
+          </div>
+
+          <div class="row panel-body">
+            <div class="col-md-2">
+              application/json
+            </div>
+
+            <div class="col-md-10 text-left">
+              <code>{
+                    <br>&nbsp;&nbsp;"created_at": "2017-08-22T14:22:05.469Z",
+                    <br>&nbsp;&nbsp;"expected": null,
+                    <br>&nbsp;&nbsp;"id": 4,
+                    <br>&nbsp;&nbsp;"result": 1,
+                    <br>&nbsp;&nbsp;"updated_at": "2017-08-22T14:22:05.476Z",
+                    <br>&nbsp;&nbsp;"vector": [
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;"1",
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;"1",
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;"1",
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;"0"
+                    <br>&nbsp;&nbsp;]
+                <br>}
+              </code>
+              <p>The <code>result</code> will be either a <code>1</code> or a <code>0</code>.</p>
+              <p><code>1</code> denotes a bad title, and <code>0</code> denotes a good title.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
