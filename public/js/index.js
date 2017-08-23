@@ -4,7 +4,7 @@ $( document ).ready(function () {
     var headline = $( "#headline-input" )[0].value;
     var headlineResponse = $("#headline-response")
 
-    $.get("http://percepticon.herokuapp.com/scores/new", { title: headline }, function (response) {
+    $.get("https://percepticon.herokuapp.com/scores/new", { title: headline }, function (response) {
       headlineResponse.removeClass();
       if(response.result === 1) {
         headlineResponse.html ("bad")
