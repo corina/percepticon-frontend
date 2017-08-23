@@ -7,10 +7,10 @@ $( document ).ready(function () {
     $.get("https://percepticon.herokuapp.com/scores/new", { title: headline }, function (response) {
       headlineResponse.removeClass();
       if(response.result === 1) {
-        headlineResponse.html ("bad")
+        headlineResponse.html ("THE PERCEPTICON dislikes this headline")
         headlineResponse.addClass("alert alert-danger")
       } else if (response.result === 0) {
-        headlineResponse.html ("good")
+        headlineResponse.html ("THE PERCEPTICON approves this headline")
         headlineResponse.addClass("alert alert-success")
       };
     });
