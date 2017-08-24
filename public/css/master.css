@@ -1,0 +1,108 @@
+.form-control {
+  margin: 1pt;
+}
+
+#headline-submit {
+  color: #BB54F0;
+  background: black;
+  border-width: thick;
+  border-color: #BB54F0;
+}
+
+#headline-input {
+  font-size: 8pt;
+  color: white;
+  background: black;
+  border-color: black;
+  border-bottom-width: thick;
+  border-bottom-color: #BB54F0;
+}
+
+.alert-danger {
+  color: red;
+  background: black;
+  border-color: red;
+  border-width: thick;
+}
+
+.alert-success {
+  color: green;
+  background: black;
+  border-color: green;
+  border-width: thick;
+}
+
+form {
+  margin: 20pt;
+}
+
+#instruction {
+  margin-bottom: 20px;
+  padding: 5pt 0pt 0pt 0pt;
+  color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12pt;
+}
+
+.container {
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100pt;
+}
+
+input {
+  font-size: 10pt;
+}
+
+code {
+  color: #C777FF;
+  background-color: #000;
+  font-family: 'Inconsolata', monospace;
+  font-size: 13pt;
+}
+
+.panel-body {
+  font-family: 'Roboto', cursive;
+  font-size: 12pt;
+}
+
+h1, h2 {
+  font-family: 'Audiowide', cursive;
+  color: #BB54F0;
+  margin-bottom: 20pt;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+h3 {
+  margin: 4pt;
+}
+
+.panel {
+  background-color: black;
+  border-width: thick;
+}
+
+.panel-default {
+  color: white;
+  border-color: white;
+}
+
+.panel-default> .panel-heading {
+  background-color: white;
+  border-radius: 0pt;
+}
+
+.subtitle {
+  color: #982FB0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20pt;
+}
